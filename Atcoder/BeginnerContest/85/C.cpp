@@ -31,7 +31,7 @@ int main() {
     } else{
         diff = N - (n10000 + n5000 + n1000);
 
-        while(1){
+        while(diff){
             // 最優先 5000 -> 1000 * 5
             if (n5000 > 0 && diff >= 4){
                 n5000--;
@@ -45,11 +45,7 @@ int main() {
                 n1000 = -1;
                 break;
             }
-                        
             diff = N - (n10000 + n5000 + n1000);
-            if (diff == 0 || diff < 0){
-                break;
-            }
         }
     }
 
