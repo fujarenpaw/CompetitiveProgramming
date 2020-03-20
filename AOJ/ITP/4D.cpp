@@ -43,7 +43,7 @@ int main() {
     vector<ll> a(N);
     for (ll i = 0; i < N; ++i) cin >> a[i];
 
-    // AOJ環境だとコンパイルエラーになる
+    // 桁落ちする
     // ll max = *max_element(begin(a), end(a));
     // ll min = *min_element(begin(a), end(a));
     // ll sum = accumulate(begin(a), end(a), 0);
