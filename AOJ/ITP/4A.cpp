@@ -13,6 +13,6 @@ void input() {
 
 int main() {
     input();
-    cout << a /b << " " << a % b << " " << float(a) / float(b) << endl;
+    cout << a /b << " " << a % b << " " << fixed << setprecision(5) << double(a) / double(b) << endl;
     return 0;
 }
